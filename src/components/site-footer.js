@@ -1,17 +1,19 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <div className="brand brand-footer">
-            <span className="brand-mark">G</span>
-            <span className="brand-text">
-              <strong>Greno</strong>
-              <small>Plaza</small>
-            </span>
-          </div>
+           <div className="flex items-center">
+                          <Image
+                            src="/images/logo.png"
+                            alt="GrenO Plaza Logo"
+                            width={120}
+                            height={40}
+                            className="h-10 w-auto object-contain"
+                          />
+                        </div>
           <p className="footer-copy">
             Premium addresses, thoughtfully designed living, and exceptional service for modern buyers.
           </p>

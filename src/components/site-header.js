@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -12,12 +12,16 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label="Greno Plaza home">
-          <span className="brand-mark">G</span>
-          <span className="brand-text">
-            <strong>Greno</strong>
-            <small>Plaza</small>
-          </span>
-        </Link>
+  <div className="flex items-center">
+    <Image
+      src="/images/logo.png"
+      alt="GrenO Plaza Logo"
+      width={300}
+      height={80}
+      className="h-16 w-auto object-contain"
+    />
+  </div>
+</Link>
 
         <nav className="main-nav" aria-label="Main navigation">
           {navItems.map((item) => (

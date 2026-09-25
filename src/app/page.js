@@ -1,3 +1,4 @@
+import Image from "next/image";
 const properties = [
   {
     title: "Greno Plaza",
@@ -764,25 +765,14 @@ export default function Home() {
             {/* LOGO */}
 
             <div className="md:col-span-2">
-
-              <div className="flex items-center gap-2">
-
-                <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[#C5A15B]">
-                  <span className="font-serif text-sm text-[#C5A15B]">
-                    G
-                  </span>
-                </div>
-
-                <div>
-                  <p className="text-[12px] font-semibold tracking-[0.12em]">
-                    GRENO
-                  </p>
-
-                  <p className="mt-1 text-[6px] uppercase tracking-[0.3em] text-[#C5A15B]">
-                    Plaza
-                  </p>
-                </div>
-
+              <div className="flex items-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="GrenO Plaza Logo"
+                  width={120}
+                  height={40}
+                  className="h-10 w-auto object-contain"
+                />
               </div>
 
               <p className="mt-4 max-w-[360px] text-[8px] leading-6 text-white/40">
