@@ -9,11 +9,11 @@ export default function SiteFooter() {
                           <Image
                             src="/images/logo.png"
                             alt="GrenO Plaza Logo"
-                            width={120}
-                            height={40}
+                            width={200}
+                            height={80}
                             className="h-10 w-auto object-contain"
                           />
-                        </div>
+            </div>
           <p className="footer-copy">
             Premium addresses, thoughtfully designed living, and exceptional service for modern buyers.
           </p>

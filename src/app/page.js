@@ -92,7 +92,7 @@ export default function Home() {
 
             <a
               href="#properties"
-              className="mt-5 inline-flex items-center rounded-full bg-[#C5A15B] px-4 py-2.5 text-[8px] font-semibold text-[#0D1F17] transition-all duration-300 hover:bg-[#D8BB75]"
+              className="mt-5 inline-flex items-center rounded-full bg-[#C5A15B] px-4 py-2.5 text-[12px] font-semibold text-[#0D1F17] transition-all duration-300 hover:bg-[#D8BB75]"
             >
               Explore Available Spaces
 
@@ -181,9 +181,12 @@ export default function Home() {
             High Footfall Location
           </h3>
 
-          <p className="mt-1.5 max-w-[190px] text-[9px] leading-[1.5] text-[#777A73] sm:text-[10px]">
-            Prime location with strong commercial corridor
-          </p>
+          <p
+  className="mt-1.5 max-w-[190px] leading-[1.5] text-[#777A73]"
+  style={{ fontSize: "14px" }}
+>
+  Prime location with strong commercial corridor
+</p>
         </div>
 
       </div>
@@ -203,7 +206,8 @@ export default function Home() {
             Flexible Shop Formats
           </h3>
 
-          <p className="mt-1.5 max-w-[190px] text-[9px] leading-[1.5] text-[#777A73] sm:text-[10px]">
+          <p  className="mt-1.5 max-w-[190px] leading-[1.5] text-[#777A73]"
+  style={{ fontSize: "14px" }}>
             Units sized for boutiques, services and F&amp;B
           </p>
         </div>
@@ -225,7 +229,8 @@ export default function Home() {
             Trusted Build Quality
           </h3>
 
-          <p className="mt-1.5 max-w-[190px] text-[9px] leading-[1.5] text-[#777A73] sm:text-[10px]">
+          <p  className="mt-1.5 max-w-[190px] leading-[1.5] text-[#777A73]"
+  style={{ fontSize: "14px" }}>
             RCC structure, premium specifications
           </p>
         </div>
@@ -326,7 +331,7 @@ export default function Home() {
       <div className="relative h-[260px] overflow-hidden sm:h-[300px] lg:h-[320px]">
 
         <img
-          src="/images/hero/heroAbout.png"
+          src="/images/hero/homeAbout.png"
           alt="Greno Plaza interior"
           className="h-full w-full object-cover"
         />
@@ -346,7 +351,7 @@ export default function Home() {
           10+
         </p>
 
-        <p className="mt-2 text-[9px] leading-[1.5] text-white/60">
+        <p className="mt-2 text-[16px] leading-[1.5] text-white/60">
           Years of Experience
         </p>
 
@@ -359,7 +364,7 @@ export default function Home() {
           15+
         </p>
 
-        <p className="mt-2 text-[9px] leading-[1.5] text-white/60">
+        <p className="mt-2 text-[16px] leading-[1.5] text-white/60">
           Projects Delivered
         </p>
 
@@ -372,7 +377,7 @@ export default function Home() {
           50+
         </p>
 
-        <p className="mt-2 text-[9px] leading-[1.5] text-white/60">
+        <p className="mt-2 text-[16px] leading-[1.5] text-white/60">
           Brands &amp; F&amp;B Brands
         </p>
 
@@ -400,7 +405,7 @@ export default function Home() {
 
           <div>
 
-            <p className="text-[8px] font-bold uppercase tracking-[0.28em] text-[#B29351]">
+            <p className="text-[12px] font-bold uppercase tracking-[0.28em] text-[#B29351]">
               Building High Streets
             </p>
 
@@ -416,24 +421,36 @@ export default function Home() {
 
             </h2>
 
-            <p className="mt-6 max-w-[500px] text-[10px] leading-7 text-[#6D746D]">
+            <p className="mt-6 max-w-[500px] text-[16px] leading-7 text-[#6D746D]">
               Greno Plaza is designed as a premium commercial destination
               where businesses can connect with customers, create visibility
               and build lasting brand presence.
             </p>
 
-            <p className="mt-3 max-w-[500px] text-[10px] leading-7 text-[#6D746D]">
+            <p className="mt-3 max-w-[500px] text-[16px] leading-7 text-[#6D746D]">
               From retail and food &amp; beverage to lifestyle and service
               brands, every space is planned around the modern high-street
               experience.
             </p>
 
             <a
-              href="#services"
-              className="mt-6 inline-flex rounded-full bg-[#0D1F17] px-5 py-2.5 text-[8px] font-semibold uppercase tracking-[0.12em] text-white"
-            >
-              Discover Greno Plaza
-            </a>
+  href="#services"
+  style={{
+    display: "inline-block",
+    backgroundColor: "#0D1F17",
+    color: "#FFFFFF",
+    padding: "12px 24px",
+    borderRadius: "9999px",
+    fontSize: "12px",
+    fontWeight: "600",
+    marginTop: "16px",
+    textTransform: "uppercase",
+    letterSpacing: "0.12em",
+    textDecoration: "none",
+  }}
+>
+  Explore More
+</a>
 
           </div>
 
@@ -469,84 +486,121 @@ export default function Home() {
           SERVICES
       ===================================================== */}
 
-      <section
-        id="services"
-        className="bg-[#0D1F17] px-5 py-20 text-white sm:px-8 lg:px-10 lg:py-24"
+    <section
+  id="services"
+  className="bg-[#0D2118] px-5 py-14 text-white sm:px-8 lg:px-10 lg:py-16"
+>
+  <div className="mx-auto max-w-[1400px]">
+
+    {/* HEADER */}
+    <div className="flex items-end justify-between">
+      <div>
+        <p className="text-[12px] font-semibold uppercase tracking-[0.28em] text-[#C5A15B]">
+          Grendo Plaza Precincts
+        </p>
+
+        <h2 className="mt-2 font-serif text-[25px] font-normal leading-none tracking-[-0.025em] sm:text-[32px] lg:text-[34px]">
+          Premium Shops. Prime Footfall.
+        </h2>
+      </div>
+
+      <a
+        href="#spaces"
+        className="mb-1 hidden text-[7px] font-medium uppercase tracking-[0.05em] text-[#C5A15B] transition-opacity hover:opacity-70 sm:block"
       >
+        View All Spaces&nbsp; →
+      </a>
+    </div>
 
-        <div className="mx-auto max-w-[1400px]">
+    {/* MOBILE VIEW ALL */}
+    <a
+      href="#spaces"
+      className="mt-4 block text-[7px] font-medium uppercase tracking-[0.05em] text-[#C5A15B] sm:hidden"
+    >
+      View All Spaces&nbsp; →
+    </a>
 
-          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+    {/* PROPERTY CARDS */}
+    <div className="mt-7 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+
+      {[
+        {
+          number: "01",
+          title: "The High Street Arcade",
+          location: "Ground Floor, Block A",
+          badge: "RETAIL ARCADE",
+          image: "/images/hero/site1.png",
+        },
+        {
+          number: "02",
+          title: "Greno Plaza Anchor Wing",
+          location: "Block B, Corner Plot",
+          badge: "ANCHOR STORE",
+          image: "/images/hero/site2.png",
+        },
+        {
+          number: "03",
+          title: "Greno Plaza Food Court",
+          location: "Rooftop, Block C",
+          badge: "FOOD COURT",
+          image: "/images/hero/site3.png",
+        },
+      ].map((space) => (
+        <div key={space.number} className="group">
+
+          {/* IMAGE */}
+          <div className="relative aspect-[1.72/1] overflow-hidden">
+
+            <img
+              src={space.image}
+              alt={space.title}
+              className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+            />
+
+            {/* IMAGE DARK OVERLAY */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+
+            {/* IMAGE BADGE */}
+            <div className="absolute bottom-3 left-3">
+              <span className="inline-flex rounded-full bg-[#07140F]/90 px-3 py-[5px] text-[6px] font-semibold uppercase tracking-[0.12em] text-white">
+                {space.badge}
+              </span>
+            </div>
+          </div>
+
+          {/* CARD INFORMATION */}
+          <div className="mt-3 flex items-start justify-between">
 
             <div>
+              <h3 className="md:text-[16px] font-medium leading-tight text-white text-[12px]">
+                {space.title}
+              </h3>
 
-              <p className="text-[8px] font-bold uppercase tracking-[0.3em] text-[#C5A15B]">
-                Why Greno Plaza
-              </p>
+              <div className="mt-1.5 flex items-center gap-1.5">
+                <span className="h-[4px] w-[4px] rounded-full bg-[#D74A43]" />
 
-              <h2 className="mt-4 text-[34px] font-light leading-[1.05] tracking-[-0.03em] sm:text-[44px]">
-
-                Built for
-
-                <br />
-
-                <span className="font-serif italic text-[#C5A15B]">
-                  business.
-                </span>
-
-              </h2>
-
+                <p className="text-[14px] leading-none text-white/45">
+                  {space.location}
+                </p>
+              </div>
             </div>
 
-
-            <p className="max-w-[400px] text-[9px] leading-6 text-white/55">
-              Every detail is designed to create a strong commercial
-              environment for brands, customers and investors.
-            </p>
-
-          </div>
-
-
-          {/* SERVICE CARDS */}
-
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-
-            {features.map((feature) => (
-
-              <div
-                key={feature.number}
-                className="border border-white/10 bg-white/[0.025] p-6 transition duration-300 hover:bg-white/[0.06]"
-              >
-
-                <div className="flex items-start justify-between">
-
-                  <span className="text-[9px] text-[#C5A15B]">
-                    {feature.number}
-                  </span>
-
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/15 text-[10px] text-[#C5A15B]">
-                    ↗
-                  </span>
-
-                </div>
-
-                <h3 className="mt-12 text-[14px] font-medium">
-                  {feature.title}
-                </h3>
-
-                <p className="mt-3 text-[9px] leading-6 text-white/45">
-                  {feature.text}
-                </p>
-
-              </div>
-
-            ))}
+            {/* ARROW BUTTON */}
+            <button
+              type="button"
+              className="ml-3 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#C5A15B]/70 text-[11px] text-[#C5A15B] transition-all duration-300 group-hover:bg-[#C5A15B] group-hover:text-[#0D2118]"
+              aria-label={`View ${space.title}`}
+            >
+              ↗
+            </button>
 
           </div>
-
         </div>
+      ))}
 
-      </section>
+    </div>
+  </div>
+</section>
 
 
       {/* =====================================================
@@ -564,7 +618,7 @@ export default function Home() {
 
             <div>
 
-              <p className="text-[8px] font-bold uppercase tracking-[0.28em] text-[#B29351]">
+              <p className="text-[12px] font-bold uppercase tracking-[0.28em] text-[#B29351]">
                 Featured Properties
               </p>
 
@@ -585,7 +639,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="w-fit rounded-full border border-[#0D1F17] px-5 py-2.5 text-[8px] font-semibold uppercase tracking-[0.12em]"
+              className="w-fit rounded-full border border-[#0D1F17] px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.12em]"
             >
               View All Spaces
             </a>
@@ -621,22 +675,22 @@ export default function Home() {
 
                 <div className="p-5">
 
-                  <p className="text-[7px] font-bold uppercase tracking-[0.18em] text-[#B29351]">
+                  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#B29351]">
                     0{index + 1} / {property.type}
                   </p>
 
-                  <h3 className="mt-2 text-[17px] font-medium text-[#0D1F17]">
+                  <h3 className="mt-2 text-[18px] font-medium text-[#0D1F17]">
                     {property.title}
                   </h3>
 
-                  <p className="mt-1.5 text-[8px] text-[#777B73]">
+                  <p className="mt-1.5 text-[12px] text-[#777B73]">
                     {property.location}
                   </p>
 
 
                   <div className="mt-5 flex items-center justify-between border-t border-[#E5DFD3] pt-4">
 
-                    <span className="text-[7px] uppercase tracking-[0.12em] text-[#777B73]">
+                    <span className="text-[10px] uppercase tracking-[0.12em] text-[#777B73]">
                       Explore Property
                     </span>
 
@@ -683,7 +737,7 @@ export default function Home() {
                 {number}
               </p>
 
-              <p className="mt-2 text-[7px] font-semibold uppercase tracking-[0.16em] text-[#777B73]">
+              <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#777B73]">
                 {label}
               </p>
 
@@ -699,181 +753,100 @@ export default function Home() {
       {/* =====================================================
           CTA
       ===================================================== */}
-
-      <section
-        id="contact"
-        className="relative overflow-hidden bg-[#0D1F17] px-5 py-20 sm:px-8 lg:px-10 lg:py-24"
-      >
-
-        {/* Decorative circles */}
-
-        <div className="absolute -right-32 -top-32 h-[400px] w-[400px] rounded-full border border-[#C5A15B]/15" />
-
-        <div className="absolute -bottom-40 -left-40 h-[450px] w-[450px] rounded-full border border-[#C5A15B]/10" />
-
-
-        <div className="relative mx-auto flex max-w-[1400px] flex-col justify-between gap-10 md:flex-row md:items-end">
-
-          <div>
-
-            <p className="text-[8px] font-bold uppercase tracking-[0.28em] text-[#C5A15B]">
-              Find Your Next Address
-            </p>
-
-            <h2 className="mt-4 max-w-[650px] text-[35px] font-light leading-[1.05] tracking-[-0.03em] text-white sm:text-[48px]">
-
-              Let&apos;s Grow Your
-
-              <br />
-
-              <span className="font-serif italic text-[#C5A15B]">
-                Business Together.
-              </span>
-
-            </h2>
-
-            <p className="mt-5 max-w-[440px] text-[9px] leading-6 text-white/45">
-              Tell us what you are looking for and our property team will help
-              you explore suitable commercial spaces at Greno Plaza.
-            </p>
-
-          </div>
-
-
-          <a
-            href="mailto:hello@grenoplaza.com"
-            className="w-fit rounded-full bg-[#C5A15B] px-6 py-3 text-[8px] font-bold uppercase tracking-[0.14em] text-[#0D1F17] transition hover:bg-[#D8BB75]"
-          >
-            Start a Conversation
-          </a>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================================
-          FOOTER
+            {/* =====================================================
+          FINAL CTA — BEFORE FOOTER
       ===================================================== */}
 
-      <footer className="bg-[#081A13] px-5 py-10 text-white sm:px-8 lg:px-10">
+      {/* =====================================================
+    FINAL CTA — BEFORE FOOTER
+===================================================== */}
 
-        <div className="mx-auto max-w-[1400px]">
+<section className="bg-[#07140F] px-0">
+  <div className="mx-auto grid max-w-[1400px] min-h-[180px] grid-cols-1 md:grid-cols-[260px_1fr_1px_260px]">
 
-          <div className="grid gap-8 md:grid-cols-4">
+    {/* LEFT IMAGE */}
+    <div className="relative hidden overflow-hidden md:block">
+      <img
+        src="/images/hero/ctaimage.png"
+        alt="Greno Plaza greenery"
+        className="h-full min-h-[180px] w-full object-cover"
+      />
 
-            {/* LOGO */}
-
-            <div className="md:col-span-2">
-              <div className="flex items-center">
-                <Image
-                  src="/images/logo.png"
-                  alt="GrenO Plaza Logo"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
-
-              <p className="mt-4 max-w-[360px] text-[8px] leading-6 text-white/40">
-                A premium commercial high street designed for brands,
-                businesses and investors in Greater Noida.
-              </p>
-
-            </div>
+      <div className="absolute inset-0 bg-[#07140F]/15" />
+    </div>
 
 
-            {/* EXPLORE */}
+    {/* CTA CONTENT */}
+    <div className="flex items-center px-7 py-8 md:px-10 md:py-6">
+      <div>
 
-            <div>
+        <p
+          className="uppercase tracking-[0.28em] text-[#C5A15B]"
+          style={{ fontSize: "8px" }}
+        >
+          Your Store Awaits
+        </p>
 
-              <p className="text-[8px] font-bold uppercase tracking-[0.2em] text-[#C5A15B]">
-                Explore
-              </p>
+        <h2
+          className="mt-2 font-serif font-normal leading-[1.05] text-[#F4EFE5]"
+          style={{ fontSize: "22px" }}
+        >
+          Let&apos;s Grow Your Business Together
+        </h2>
 
-              <div className="mt-4 space-y-2.5">
+        <p
+          className="mt-2 max-w-[390px] leading-[1.45] text-[#AEB8B1]"
+          style={{ fontSize: "16px" }}
+        >
+          Get in touch for shop availability, pricing and a personalized
+          site visit.
+        </p>
 
-                <a
-                  href="#"
-                  className="block text-[8px] text-white/45 hover:text-white"
-                >
-                  Home
-                </a>
+        <a
+          href="#contact"
+          className="mt-3 inline-flex items-center rounded-full bg-[#C5A15B] px-5 py-2 text-[#0D1F17] transition hover:bg-[#D8BB75]"
+          style={{
+            fontSize: "12px",
+            lineHeight: "1",
+            fontWeight: "600",
+            textDecoration: "none",
+          }}
+        >
+          Contact Us
+          <span className="ml-2">→</span>
+        </a>
 
-                <a
-                  href="#properties"
-                  className="block text-[8px] text-white/45 hover:text-white"
-                >
-                  Properties
-                </a>
-
-                <a
-                  href="#about"
-                  className="block text-[8px] text-white/45 hover:text-white"
-                >
-                  About
-                </a>
-
-                <a
-                  href="#contact"
-                  className="block text-[8px] text-white/45 hover:text-white"
-                >
-                  Contact
-                </a>
-
-              </div>
-
-            </div>
-
-
-            {/* CONTACT */}
-
-            <div>
-
-              <p className="text-[8px] font-bold uppercase tracking-[0.2em] text-[#C5A15B]">
-                Contact
-              </p>
-
-              <div className="mt-4 space-y-2.5">
-
-                <p className="text-[8px] text-white/45">
-                  +91 98765 43210
-                </p>
-
-                <p className="text-[8px] text-white/45">
-                  hello@grenoplaza.com
-                </p>
-
-                <p className="text-[8px] leading-5 text-white/45">
-                  Greater Noida,
-                  <br />
-                  Uttar Pradesh
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
+      </div>
+    </div>
 
 
-          {/* COPYRIGHT */}
+    {/* DIVIDER */}
+    <div className="hidden bg-white/10 md:block" />
 
-          <div className="mt-8 flex flex-col justify-between gap-2 border-t border-white/10 pt-5 sm:flex-row">
 
-            <p className="text-[7px] uppercase tracking-[0.12em] text-white/25">
-              © 2026 Greno Plaza. All Rights Reserved.
-            </p>
+    {/* RIGHT LOGO */}
+    <div className="flex items-center px-7 py-7 md:px-8">
 
-            <p className="text-[7px] uppercase tracking-[0.12em] text-white/25">
-              Premium Commercial Real Estate
-            </p>
+      <div>
+        <img
+          src="/images/logo1.png"
+          alt="Greno Plaza"
+          className="h-auto w-[200px] object-contain"
+        />
 
-          </div>
+        <p
+          className="mt-5 uppercase tracking-[0.18em] text-[#6F7A73]"
+          style={{ fontSize: "6px" }}
+        >
+          RETAIL&nbsp;&nbsp;•&nbsp;&nbsp;FOOTFALL&nbsp;&nbsp;•&nbsp;&nbsp;GROWTH
+        </p>
+      </div>
 
-        </div>
+    </div>
 
-      </footer>
+  </div>
+</section>
+     
 
     </main>
   );
