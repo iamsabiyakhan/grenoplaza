@@ -37,7 +37,7 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 Contact Us
               </p>
 
@@ -61,7 +61,7 @@ export default function ContactPage() {
             </h1>
 
 
-            <p className="mt-7 max-w-[410px] text-[11px] leading-6 text-white/60">
+            <p className="mt-7 max-w-[410px] text-[16px] leading-6 text-white/60">
               We&apos;re here to listen, understand and help you find the
               right opportunity at Greno Plaza.
             </p>
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 Get In Touch
               </p>
 
@@ -110,7 +110,7 @@ export default function ContactPage() {
             </h2>
 
 
-            <p className="mt-7 max-w-[390px] text-[10px] leading-6 text-[#0D2118]/55">
+            <p className="mt-7 max-w-[390px] text-[16px] leading-6 text-[#0D2118]/55">
               Whether you&apos;re a business owner, investor, or simply want
               to know more about Greno Plaza, we&apos;d love to hear from you.
               Reach out to us through the form or via our contact details.
@@ -124,15 +124,15 @@ export default function ContactPage() {
               <div className="flex items-center gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#C1993D] text-[#0D2118]">
-                  <span className="text-sm">⌕</span>
+                  <span className="text-2xl">⌕</span>
                 </div>
 
                 <div>
-                  <p className="text-[11px] font-semibold">
-                    +91 98765 43210
+                  <p className="text-[14px] font-semibold">
+                    Contact No: 9810 625 583
                   </p>
 
-                  <p className="mt-1 text-[8px] text-[#0D2118]/45">
+                  <p className="mt-1 text-[14px] text-[#0D2118]/45">
                     Mon - Sat, 9:00 AM - 6:00 PM
                   </p>
                 </div>
@@ -144,15 +144,15 @@ export default function ContactPage() {
               <div className="flex items-center gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#C1993D] text-[#0D2118]">
-                  <span className="text-sm">✉</span>
+                  <span className="text-2xl">✉</span>
                 </div>
 
                 <div>
-                  <p className="text-[11px] font-semibold">
+                  <p className="text-[14px] font-semibold">
                     info@grenoplaza.com
                   </p>
 
-                  <p className="mt-1 text-[8px] text-[#0D2118]/45">
+                  <p className="mt-1 text-[14px] text-[#0D2118]/45">
                     We reply within 24 hours
                   </p>
                 </div>
@@ -164,16 +164,18 @@ export default function ContactPage() {
               <div className="flex items-center gap-4">
 
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#C1993D] text-[#0D2118]">
-                  <span className="text-sm">⌖</span>
+                  <span className="text-2xl">⌖</span>
                 </div>
 
                 <div>
-                  <p className="text-[11px] font-semibold">
+                  <p className="text-[14px] font-semibold">
                     Greno Plaza
                   </p>
 
-                  <p className="mt-1 text-[8px] text-[#0D2118]/45">
-                    Greater Noida, Uttar Pradesh
+                  <p className="mt-1 text-[14px] text-[#0D2118]/45">
+                    Plot No. LS-09, Sector 36, Greater Noida (U.P.)
+
+
                   </p>
                 </div>
 
@@ -185,23 +187,23 @@ export default function ContactPage() {
             {/* SOCIAL */}
             <div className="mt-8 border-t border-[#0D2118]/10 pt-5">
 
-              <p className="text-[7px] uppercase tracking-[0.3em] text-[#0D2118]/40">
+              <p className="text-[12px] uppercase tracking-[0.3em] text-[#0D2118]/40">
                 Follow Us
               </p>
 
-              <div className="mt-3 flex gap-2">
+              <div className="mt-3 flex gap-3">
 
-                {["f", "◎", "in", "▶"].map((icon) => (
-                  <a
-                    key={icon}
-                    href="#"
-                    className="flex h-7 w-7 items-center justify-center rounded-full bg-[#C1993D] text-[8px] font-semibold text-[#0D2118] transition hover:bg-[#0D2118] hover:text-[#C1993D]"
-                  >
-                    {icon}
-                  </a>
-                ))}
+  {["f", "◎", "in", "▶"].map((icon) => (
+    <a
+      key={icon}
+      href="#"
+      className="group flex h-9 w-9 items-center justify-center rounded-full bg-[#C1993D] text-[24px] font-semibold transition hover:bg-[#0D2118]"
+    >
+      <span className="text-[#0D2118] transition-colors group-hover:text-[#C1993D]">{icon}</span>
+    </a>
+  ))}
 
-              </div>
+</div>
 
             </div>
 
@@ -283,10 +285,10 @@ export default function ContactPage() {
                 {/* BUTTON */}
                 <button
                   type="submit"
-                  className="flex h-12 w-full items-center justify-center gap-5 bg-[#C1993D] text-[8px] font-bold uppercase tracking-[0.18em] text-[#0D2118] transition hover:bg-[#e0bd6b]"
+                  className="group flex h-12 w-full items-center justify-center gap-5 bg-[#C1993D] text-[8px] font-bold uppercase tracking-[0.18em] transition-colors hover:bg-[#0D2118]"
                 >
-                  Send Enquiry
-                  <span className="text-[13px]">→</span>
+                  <span className="text-[#0D2118] transition-colors group-hover:text-white">Send Enquiry</span>
+                  <span className="text-[13px] text-[#0D2118] transition-colors group-hover:text-[#C1993D]">→</span>
                 </button>
 
               </form>
@@ -309,7 +311,7 @@ export default function ContactPage() {
           {/* Replace with actual Google Maps embed if required */}
           <iframe
             title="Greno Plaza Location"
-            src="https://www.google.com/maps?q=Greater%20Noida%20Uttar%20Pradesh&output=embed"
+            src="https://www.google.com/maps?q=Plot%20No.%20LS-09%2C%20Sector%2036%2C%20Greater%20Noida%20(U.P.)&output=embed"
             className="absolute inset-0 h-full w-full grayscale opacity-60"
             loading="lazy"
           />
@@ -341,7 +343,7 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 Our Location
               </p>
 
@@ -368,7 +370,7 @@ export default function ContactPage() {
             <div className="mt-6 h-px w-10 bg-[#C1993D]" />
 
 
-            <p className="mt-6 max-w-[430px] text-[10px] leading-6 text-[#0D2118]/55">
+            <p className="mt-6 max-w-[430px] text-[18px] leading-6 text-[#0D2118]/55">
               Strategically located in a prime commercial hub, Greno Plaza
               offers excellent connectivity, high visibility and easy access
               for your customers and business.
@@ -376,14 +378,14 @@ export default function ContactPage() {
 
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Greno+Plaza+Greater+Noida"
+              href="https://www.google.com/maps/search/?api=1&query=Plot+No.+LS-09%2C+Sector+36%2C+Greater+Noida+%28U.P.%29"
               target="_blank"
               rel="noreferrer"
-              className="mt-7 inline-flex items-center gap-6 bg-[#C1993D] px-6 py-4 text-[8px] font-bold uppercase tracking-[0.15em] text-[#0D2118] transition hover:bg-[#0D2118] hover:text-white"
+              className="group mt-7 inline-flex items-center gap-6 bg-[#C1993D] px-6 py-4 text-[12px] font-bold uppercase tracking-[0.15em] text-[#0D2118] transition-colors hover:bg-[#0D2118] hover:text-white"
             >
-              <span>➤</span>
-              Get Directions
-              <span>→</span>
+              <span className="text-[#0D2118] transition-colors group-hover:text-[#C1993D]">➤</span>
+              <span className="transition-colors group-hover:text-[#C1993D]">Get Directions</span>
+              <span className="text-[#0D2118] transition-colors group-hover:text-[#C1993D]">→</span>
             </a>
 
           </div>
@@ -419,7 +421,7 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 Let&apos;s Create Opportunities Together
               </p>
 
@@ -442,7 +444,7 @@ export default function ContactPage() {
             </h2>
 
 
-            <p className="mt-6 max-w-[470px] text-[10px] leading-6 text-white/55">
+            <p className="mt-6 max-w-[470px] text-[14px] leading-6 text-white/55">
               Be a part of Greno Plaza — a high-street destination designed
               for growth, visibility and long-term success.
             </p>
@@ -450,10 +452,10 @@ export default function ContactPage() {
 
             <a
               href="#contact-form"
-              className="mt-8 inline-flex items-center gap-6 bg-[#C1993D] px-7 py-4 text-[8px] font-bold uppercase tracking-[0.16em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
+              className="group mt-8 inline-flex items-center gap-6 bg-[#C1993D] px-7 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-[#0D2118] transition-colors hover:bg-[#0D2118] hover:text-[#F4EFE9]"
             >
-              Enquire Now
-              <span>→</span>
+              <span className="transition-colors group-hover:text-[#F4EFE9]">Enquire Now</span>
+              <span className="transition-colors group-hover:text-[#F4EFE9]">→</span>
             </a>
 
           </div>
@@ -463,24 +465,7 @@ export default function ContactPage() {
       </section>
 
 
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
-      <footer className="bg-[#0D2118] px-6 py-7 text-white sm:px-10 lg:px-12">
-
-        <div className="mx-auto flex max-w-[1400px] flex-col justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center">
-
-          <p className="text-[7px] uppercase tracking-[0.2em] text-white/35">
-            © 2026 Greno Plaza. All Rights Reserved.
-          </p>
-
-          <p className="text-[7px] uppercase tracking-[0.2em] text-[#C1993D]">
-            High Street Commercial
-          </p>
-
-        </div>
-
-      </footer>
+      
 
     </main>
   );

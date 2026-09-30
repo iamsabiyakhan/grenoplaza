@@ -5,15 +5,21 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-           <div className="flex items-center">
-                          <Image
-                            src="/images/logo.png"
-                            alt="GrenO Plaza Logo"
-                            width={200}
-                            height={80}
-                            className="h-10 w-auto object-contain"
-                          />
-            </div>
+            <Link
+          href="/"
+          className="brand"
+          aria-label="Greno Plaza home"
+        >
+          <div className="flex items-center">
+            <Image
+              src="/images/footerlogo.png"
+              alt="Greno Plaza Logo"
+              width={155}
+              height={80}
+              className="h-100px w-100px object-fit"
+            />
+          </div>
+        </Link>
           <p className="footer-copy">
             Premium addresses, thoughtfully designed living, and exceptional service for modern buyers.
           </p>
@@ -29,22 +35,14 @@ export default function SiteFooter() {
           </ul>
         </div>
 
-        <div>
-          <h4>Services</h4>
-          <ul className="footer-links">
-            <li>Property Search</li>
-            <li>Investment Advisory</li>
-            <li>Legal Support</li>
-            <li>Prime Location Advice</li>
-          </ul>
-        </div>
+        
 
         <div>
           <h4>Contact</h4>
           <ul className="footer-links">
-            <li>+92 300 1234567</li>
+            <li>9810 625 583</li>
             <li>hello@greno-plaza.com</li>
-            <li>Downtown Avenue, Karachi</li>
+            <li>Plot No. LS-09, Sector 36, Greater Noida (U.P.)</li>
           </ul>
         </div>
       </div>

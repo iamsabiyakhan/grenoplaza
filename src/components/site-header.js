@@ -25,11 +25,11 @@ export default function SiteHeader() {
         >
           <div className="flex items-center">
             <Image
-              src="/images/logo1.png"
+              src="/images/grenoplaza2.png"
               alt="Greno Plaza Logo"
               width={155}
               height={80}
-              className="h-100px w-100px object-contain"
+              className="h-100px w-100px object-fit"
             />
           </div>
         </Link>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { services } from "../../data/service-data";
 
 const properties = [
   {
@@ -29,54 +30,6 @@ const properties = [
     location: "Greno Plaza, Greater Noida",
     size: "1,000 - 5,000 Sq. Ft.",
     image: "/images/property-office.jpg",
-  },
-];
-
-
-// SERVICES
-// Each service has its own slug so the card can open
-// a dedicated service details page.
-
-const services = [
-  {
-    slug: "leasing-renting",
-    icon: "▥",
-    title: "Leasing & Renting",
-    description:
-      "Flexible leasing options for retail and commercial spaces.",
-    image: "/images/service/05-lifestyle-amenities.jpg",
-  },
-  {
-    slug: "property-advisory",
-    icon: "▤",
-    title: "Property Advisory",
-    description:
-      "Expert guidance for investment and expansion opportunities.",
-    image: "/images/service/02-property-advisory.jpg",
-  },
-  {
-    slug: "space-management",
-    icon: "⌂",
-    title: "Space Management",
-    description:
-      "Efficient space planning and operational support.",
-    image: "/images/service/03-space-management.jpg",
-  },
-  {
-    slug: "relocation-support",
-    icon: "◌",
-    title: "Commercial Property Solutions",
-    description:
-      "End-to-end assistance for a smooth setup experience.",
-    image: "/images/service/04-relocation-support.jpg",
-  },
-  {
-    slug: "commercial-space-solutions",
-    icon: "♧",
-    title: "Commercial Space Solutions",
-    description:
-      "High-quality amenities to enhance business and customer experience.",
-    image: "/images/service/space-management-233x186-39.png",
   },
 ];
 
@@ -140,7 +93,7 @@ export default function ServicePage() {
 
               <span className="h-px w-10 bg-[#C1993D]" />
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 Our Services
               </p>
 
@@ -158,7 +111,7 @@ export default function ServicePage() {
             </h1>
 
 
-            <p className="mt-7 max-w-[420px] text-[11px] leading-6 text-white/65">
+            <p className="mt-7 max-w-[420px] text-[14px] leading-6 text-white/65">
               At Greno Plaza, we offer premium commercial spaces and
               end-to-end support to help businesses thrive in a vibrant
               high-street destination.
@@ -167,7 +120,7 @@ export default function ServicePage() {
 
             <a
               href="#services"
-              className="mt-8 inline-flex items-center gap-6 bg-[#C1993D] px-7 py-4 text-[8px] font-bold uppercase tracking-[0.15em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
+              className="mt-8 inline-flex items-center gap-6 bg-[#C1993D] px-7 py-4 text-[12px] font-bold uppercase tracking-[0.15em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
             >
               Explore Our Services
 
@@ -215,18 +168,18 @@ export default function ServicePage() {
                       className="group flex items-center gap-4 border-b border-[#0D2118]/10 py-4 last:border-b-0"
                     >
 
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E5ECE5] text-[14px] transition group-hover:bg-[#C1993D]">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E5ECE5] text-[24px] transition group-hover:bg-[#C1993D]">
                         {icon}
                       </div>
 
 
                       <div className="min-w-0 flex-1">
 
-                        <h3 className="text-[10px] font-semibold">
+                        <h3 className="text-[14px] font-semibold">
                           {title}
                         </h3>
 
-                        <p className="mt-1 text-[7px] leading-4 text-[#0D2118]/50">
+                        <p className="mt-1 text-[12px] leading-4 text-[#0D2118]/50">
                           {text}
                         </p>
 
@@ -247,7 +200,7 @@ export default function ServicePage() {
 
               <Link
                 href="/contact"
-                className="mt-5 inline-flex items-center gap-3 rounded-full border border-[#0D2118]/60 px-5 py-2.5 text-[7px] font-semibold uppercase tracking-[0.08em] transition hover:bg-[#0D2118] hover:text-white"
+                className="mt-5 inline-flex items-center gap-3 rounded-full border border-[#0D2118]/60 px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.08em] transition hover:bg-[#0D2118] hover:text-white"
               >
                 ▣ Book a Site Visit →
               </Link>
@@ -263,7 +216,7 @@ export default function ServicePage() {
 
               <div className="relative">
 
-                <p className="text-[8px] font-semibold uppercase tracking-[0.35em] text-[#C1993D]">
+                <p className="text-[12px] font-semibold uppercase tracking-[0.35em] text-[#C1993D]">
                   Why Choose Us
                 </p>
 
@@ -277,7 +230,7 @@ export default function ServicePage() {
                 </h2>
 
 
-                <p className="mt-6 max-w-[390px] text-[9px] leading-5 text-white/55">
+                <p className="mt-6 max-w-[390px] text-[14px] leading-5 text-white/55">
                   We provide tailored property management solutions
                   designed to maximize your value, ensure seamless
                   operations and help your business grow at Greno Plaza.
@@ -302,7 +255,7 @@ export default function ServicePage() {
                         ✓
                       </span>
 
-                      <span className="text-[8px] text-white/70">
+                      <span className="text-[14px] text-white/70">
                         {item}
                       </span>
 
@@ -315,7 +268,7 @@ export default function ServicePage() {
 
                 <Link
                   href="/about"
-                  className="mt-7 inline-flex items-center gap-5 bg-[#C1993D] px-5 py-3 text-[7px] font-bold uppercase tracking-[0.13em] text-[#0D2118]"
+                  className="mt-7 inline-flex items-center gap-5 bg-[#C1993D] px-5 py-3 text-[12px] font-bold uppercase tracking-[0.13em] text-[#0D2118]"
                 >
                   Learn More About Us →
                 </Link>
@@ -349,7 +302,7 @@ export default function ServicePage() {
 
               <div className="flex items-center gap-4">
 
-                <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+                <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                   Our Services
                 </p>
 
@@ -367,7 +320,7 @@ export default function ServicePage() {
             </div>
 
 
-            <p className="max-w-[300px] text-[9px] leading-5 text-[#0D2118]/50">
+            <p className="max-w-[300px] text-[14px] leading-5 text-[#0D2118]/50">
               From brand placement to space optimization, our full-service
               property management solutions are designed to help your
               business thrive in one integrated destination.
@@ -420,7 +373,7 @@ export default function ServicePage() {
                   </h3>
 
 
-                  <p className="mt-2 min-h-[38px] text-[7px] leading-4 text-[#0D2118]/50">
+                  <p className="mt-2 min-h-[38px] text-[14px] leading-4 text-[#0D2118]/50">
                     {service.description}
                   </p>
 
@@ -429,7 +382,7 @@ export default function ServicePage() {
 
                   <div className="mt-4 flex items-center justify-between">
 
-                    <span className="text-[7px] font-semibold uppercase tracking-[0.1em]">
+                    <span className="text-[12px] font-semibold uppercase tracking-[0.1em]">
                       Learn More
                     </span>
 
@@ -456,146 +409,79 @@ export default function ServicePage() {
           FEATURED PROPERTIES
       ===================================================== */}
 
-      <section className="border-t border-[#0D2118]/5 px-6 pb-24 pt-16 sm:px-10 lg:px-16 lg:pt-20">
 
-        <div className="mx-auto max-w-[1350px]">
-
-
-          {/* HEADING */}
-
-          <div className="flex items-end justify-between">
-
-            <div>
-
-              <div className="flex items-center gap-4">
-
-                <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
-                  Featured Properties
-                </p>
-
-                <span className="h-px w-10 bg-[#C1993D]" />
-
-              </div>
-
-
-              <h2 className="mt-5 font-serif text-[42px] font-light leading-none tracking-[-0.04em] sm:text-[54px]">
-                Our Premium Listings
-              </h2>
-
-            </div>
-
-
-            <Link
-              href="/properties"
-              className="hidden items-center gap-3 text-[8px] font-semibold uppercase tracking-[0.08em] sm:flex"
-            >
-              View All Properties →
-            </Link>
-
-          </div>
-
-
-          {/* PROPERTY CARDS */}
-
-          <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-
-            {properties.map((property) => (
-
-              <Link
-                key={property.slug}
-                href={`/properties/${property.slug}`}
-                className="group block overflow-hidden border border-[#0D2118]/10 bg-[#FBF8F3] shadow-[0_4px_20px_rgba(13,33,24,0.04)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(13,33,24,0.1)]"
-              >
-
-                {/* IMAGE */}
-
-                <div className="relative aspect-[1.35/1] overflow-hidden">
-
-                  <Image
-                    src={property.image}
-                    alt={property.title}
-                    fill
-                    className="object-cover transition duration-700 group-hover:scale-105"
-                  />
-
-                </div>
-
-
-                {/* CONTENT */}
-
-                <div className="p-4">
-
-                  <h3 className="font-serif text-[17px] leading-tight">
-                    {property.title}
-                  </h3>
-
-
-                  <div className="mt-3 flex items-center gap-2">
-
-                    <span className="text-[10px] text-[#C1993D]">
-                      ⌖
-                    </span>
-
-                    <span className="text-[7px] text-[#0D2118]/50">
-                      {property.location}
-                    </span>
-
-                  </div>
-
-
-                  <div className="mt-2 flex items-center gap-2">
-
-                    <span className="text-[10px] text-[#C1993D]">
-                      ▦
-                    </span>
-
-                    <span className="text-[7px] text-[#0D2118]/50">
-                      {property.size}
-                    </span>
-
-                  </div>
-
-
-                  <div className="mt-4 flex items-center justify-between">
-
-                    <span className="text-[7px] font-semibold uppercase tracking-[0.1em] text-[#0D2118]/50">
-                      View Details
-                    </span>
-
-                    <span className="text-[15px] transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
-
-                  </div>
-
-                </div>
-
-              </Link>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
 
 
       {/* =====================================================
           BOTTOM BRAND SECTION
       ===================================================== */}
 
-      <section className="bg-[#0D2118] px-6 py-7 text-center">
+     <section className="relative overflow-hidden bg-[#0D2118] px-6 py-12 text-center sm:py-14 lg:py-16">
 
-        <p className="text-[7px] uppercase tracking-[0.35em] text-[#C1993D]">
-          Greno Plaza
-        </p>
+  {/* Subtle background glow */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(193,153,61,0.08),transparent_55%)]" />
 
-        <p className="mt-2 font-serif text-[20px] text-white">
-          High Street Commercial
-        </p>
+  {/* Left decorative gold curve */}
+  <div className="absolute -left-[110px] -top-[170px] h-[420px] w-[240px] rotate-[24deg] rounded-[50%] border-r border-[#C1993D]/70 sm:-left-[90px]" />
 
-      </section>
+  {/* Right decorative gold curve */}
+  <div className="absolute -right-[110px] -bottom-[190px] h-[440px] w-[250px] -rotate-[24deg] rounded-[50%] border-l border-[#C1993D]/70 sm:-right-[90px]" />
+
+  {/* Subtle leaf-style decoration */}
+  <div className="absolute left-0 top-0 h-full w-[180px] bg-gradient-to-r from-[#061A12]/40 to-transparent opacity-60" />
+
+  <div className="relative mx-auto max-w-[1100px]">
+
+    {/* TOP LABEL */}
+    <div className="flex items-center justify-center gap-5">
+
+      <span className="h-px w-16 bg-[#C1993D]/70" />
+
+      <p className="text-[12px] font-medium uppercase tracking-[0.5em] text-[#C1993D]">
+        Greno Plaza
+      </p>
+
+      <span className="h-px w-16 bg-[#C1993D]/70" />
+
+    </div>
+
+
+    {/* MAIN TITLE */}
+    <h2 className="mt-5 font-serif text-[38px] font-light leading-none tracking-[-0.035em] text-white sm:text-[50px] lg:text-[58px]">
+
+      High Street{" "}
+
+      <span className="italic text-[#C1993D]">
+        Commercial
+      </span>
+
+    </h2>
+
+
+    {/* DECORATIVE DIVIDER */}
+    <div className="mt-7 flex items-center justify-center gap-4">
+
+      <span className="h-px w-20 bg-[#C1993D]/70 sm:w-28" />
+
+      <span className="flex h-7 w-7 rotate-45 items-center justify-center border border-[#C1993D]">
+
+        <span className="h-1.5 w-1.5 bg-[#C1993D]" />
+
+      </span>
+
+      <span className="h-px w-20 bg-[#C1993D]/70 sm:w-28" />
+
+    </div>
+
+
+    {/* SMALL BRAND LINE */}
+    <p className="mt-7 text-[12px] uppercase tracking-[0.4em] text-white/40">
+      Where Business Meets Possibility
+    </p>
+
+  </div>
+
+</section>
 
     </main>
   );

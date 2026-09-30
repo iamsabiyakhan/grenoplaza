@@ -90,7 +90,7 @@ export default function Home() {
               business, and positioned for lasting returns.
             </p>
 
-            <a
+            {/* <a
               href="#properties"
               className="mt-5 inline-flex items-center rounded-full bg-[#C5A15B] px-4 py-2.5 text-[12px] font-semibold text-[#0D1F17] transition-all duration-300 hover:bg-[#D8BB75]"
             >
@@ -99,7 +99,7 @@ export default function Home() {
               <span className="ml-2 text-[10px]">
                 →
               </span>
-            </a>
+            </a> */}
 
           </div>
 
@@ -688,7 +688,7 @@ export default function Home() {
                   </p>
 
 
-                  <div className="mt-5 flex items-center justify-between border-t border-[#E5DFD3] pt-4">
+                  {/* <div className="mt-5 flex items-center justify-between border-t border-[#E5DFD3] pt-4">
 
                     <span className="text-[10px] uppercase tracking-[0.12em] text-[#777B73]">
                       Explore Property
@@ -698,7 +698,7 @@ export default function Home() {
                       ↗
                     </span>
 
-                  </div>
+                  </div> */}
 
                 </div>
 
@@ -825,24 +825,7 @@ export default function Home() {
 
 
     {/* RIGHT LOGO */}
-    <div className="flex items-center px-7 py-7 md:px-8">
-
-      <div>
-        <img
-          src="/images/logo1.png"
-          alt="Greno Plaza"
-          className="h-auto w-[200px] object-contain"
-        />
-
-        <p
-          className="mt-5 uppercase tracking-[0.18em] text-[#6F7A73]"
-          style={{ fontSize: "6px" }}
-        >
-          RETAIL&nbsp;&nbsp;•&nbsp;&nbsp;FOOTFALL&nbsp;&nbsp;•&nbsp;&nbsp;GROWTH
-        </p>
-      </div>
-
-    </div>
+   
 
   </div>
 </section>

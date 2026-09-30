@@ -33,70 +33,7 @@ export default function AboutPage() {
   return (
     <main className="overflow-hidden bg-[#F4EFE9] text-[#0D2118]">
 
-      {/* =========================================================
-          NAVBAR
-      ========================================================= */}
-      <header className="absolute left-0 top-0 z-50 w-full">
-        <div className="mx-auto flex h-[82px] max-w-[1450px] items-center justify-between px-6 lg:px-12">
-
-          {/* LOGO */}
-          <a href="/" className="group">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-9 items-center justify-center border border-[#C1993D] text-[#C1993D]">
-                <span className="font-serif text-xl">G</span>
-              </div>
-
-              <div className="leading-none">
-                <div className="text-[18px] font-bold tracking-[-0.04em] text-white">
-                  GRENO
-                </div>
-
-                <div className="mt-1 text-[13px] font-semibold tracking-[0.12em] text-[#C1993D]">
-                  PLAZA
-                </div>
-
-                <div className="mt-0.5 text-[4px] tracking-[0.2em] text-white/70">
-                  HIGH STREET COMMERCIAL
-                </div>
-              </div>
-            </div>
-          </a>
-
-          {/* DESKTOP NAV */}
-          <nav className="hidden items-center gap-9 lg:flex">
-            {[
-              ["HOME", "/"],
-              ["ABOUT", "#about"],
-              ["AMENITIES", "#amenities"],
-              ["GALLERY", "#gallery"],
-              ["LOCATION", "#location"],
-              ["CONTACT", "#contact"],
-            ].map(([label, href]) => (
-              <a
-                key={label}
-                href={href}
-                className={`relative text-[8px] font-medium tracking-[0.08em] text-white/85 transition hover:text-[#C1993D] ${
-                  label === "ABOUT"
-                    ? "after:absolute after:-bottom-3 after:left-0 after:h-px after:w-full after:bg-[#C1993D]"
-                    : ""
-                }`}
-              >
-                {label}
-              </a>
-            ))}
-          </nav>
-
-          {/* CTA */}
-          <a
-            href="#contact"
-            className="hidden bg-[#C1993D] px-5 py-3 text-[8px] font-semibold uppercase tracking-[0.1em] text-[#0D2118] transition hover:bg-[#d4ae58] sm:block"
-          >
-            Enquire Now
-            <span className="ml-3">→</span>
-          </a>
-        </div>
-      </header>
-
+      
 
       {/* =========================================================
           HERO
@@ -104,7 +41,7 @@ export default function AboutPage() {
       <section className="relative min-h-[680px] overflow-hidden bg-[#0D2118] lg:min-h-[760px]">
 
         <Image
-          src="/images/greno-hero.jpg"
+          src="/images/about/aboutHero.png"
           alt="Greno Plaza"
           fill
           priority
@@ -117,7 +54,7 @@ export default function AboutPage() {
         {/* Gold decorative curve */}
         <div className="absolute bottom-[-130px] left-[43%] h-[470px] w-[190px] rotate-[17deg] rounded-[100%] border-l border-[#C1993D] opacity-80" />
 
-        <div className="relative mx-auto flex min-h-[680px] max-w-[1450px] items-center px-6 pt-24 lg:min-h-[760px] lg:px-12">
+        <div className="relative mx-auto flex min-h-[500px] max-w-[1450px] items-start px-6 pt-10 lg:min-h-[500px] lg:px-12">
 
           <div className="max-w-[560px]">
 
@@ -125,7 +62,7 @@ export default function AboutPage() {
               About Greno Plaza
             </p>
 
-            <h1 className="font-serif text-[52px] font-light leading-[0.94] tracking-[-0.04em] text-white sm:text-[70px] lg:text-[82px]">
+            <h1 className="font-serif text-[40px] font-light leading-[0.94] tracking-[-0.04em] text-white sm:text-[70px] lg:text-[82px]">
               More Than
               <br />
               Real Estate,
@@ -137,7 +74,7 @@ export default function AboutPage() {
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
-            <p className="mt-6 max-w-[430px] text-[11px] leading-6 text-white/65">
+            <p className="mt-6 max-w-[430px] text-[14px] leading-6 text-white/65">
               Greno Plaza is a new-age high street commercial destination,
               created to bring together visionary businesses, vibrant
               experiences and long-term value in one landmark address.
@@ -145,7 +82,7 @@ export default function AboutPage() {
 
             <a
               href="#about"
-              className="mt-8 inline-flex items-center gap-5 border border-[#C1993D] px-6 py-3 text-[8px] font-semibold uppercase tracking-[0.16em] text-[#C1993D] transition hover:bg-[#C1993D] hover:text-[#0D2118]"
+              className="mt-8 inline-flex items-center gap-5 border bg-[#C1993D] border-[#C1993D] px-6 py-3 text-[8px] font-semibold uppercase tracking-[0.16em] text-[#0D2118] transition hover:bg-[#C1993D] hover:text-[#0D2118]"
             >
               Our Story
               <span>→</span>
@@ -169,7 +106,7 @@ export default function AboutPage() {
           {/* LEFT CONTENT */}
           <div className="flex flex-col justify-center">
 
-            <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+            <p className="text-[24px] font-semibold uppercase tracking-[0.2em] text-[#C1993D]">
               Who We Are
             </p>
 
@@ -185,7 +122,7 @@ export default function AboutPage() {
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
-            <p className="mt-6 max-w-[440px] text-[11px] leading-6 text-[#0D2118]/60">
+            <p className="mt-6 max-w-[440px] text-[16px] leading-6 text-[#0D2118]/60">
               Greno Plaza is designed as a premium high-street commercial
               development that redefines the way businesses and people
               interact. Our focus is on creating thoughtfully planned retail
@@ -205,15 +142,15 @@ export default function AboutPage() {
                   key={line1}
                   className="border-r border-[#0D2118]/10 px-3 first:pl-0 last:border-0"
                 >
-                  <div className="text-[21px] text-[#C1993D]">
+                  <div className="text-[24px] text-[#C1993D]">
                     {icon}
                   </div>
 
-                  <p className="mt-2 text-[8px] font-medium">
+                  <p className="mt-2 text-[14px] font-medium">
                     {line1}
                   </p>
 
-                  <p className="text-[7px] text-[#0D2118]/50">
+                  <p className="text-[12px] text-[#0D2118]/50">
                     {line2}
                   </p>
                 </div>
@@ -228,7 +165,7 @@ export default function AboutPage() {
 
             <div className="relative min-h-[480px] overflow-hidden sm:min-h-[560px]">
               <Image
-                src="/images/greno-courtyard.jpg"
+                src="/images/about/aboutSection.png"
                 alt="Greno Plaza courtyard"
                 fill
                 className="object-cover"
@@ -276,7 +213,7 @@ export default function AboutPage() {
           {/* TITLE */}
           <div className="flex flex-col justify-center">
 
-            <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
               Our Purpose
             </p>
 
@@ -311,11 +248,11 @@ export default function AboutPage() {
 
               </div>
 
-              <p className="mt-14 text-[8px] font-semibold uppercase tracking-[0.3em] text-[#0D2118]/55">
+              <p className="mt-14 text-[18px] font-semibold uppercase tracking-[0.3em] text-[#0D2118]/55">
                 Our Vision
               </p>
 
-              <p className="mt-5 text-[11px] leading-6 text-[#0D2118]/60">
+              <p className="mt-5 text-[16px] leading-6 text-[#0D2118]/60">
                 To become a landmark commercial destination that sets new
                 benchmarks in design, experience and value, empowering
                 businesses and communities to grow together.
@@ -339,11 +276,11 @@ export default function AboutPage() {
 
               </div>
 
-              <p className="mt-14 text-[8px] font-semibold uppercase tracking-[0.3em] text-[#C1993D]">
+              <p className="mt-14 text-[18px] font-semibold uppercase tracking-[0.3em] text-[#C1993D]">
                 Our Mission
               </p>
 
-              <p className="mt-5 text-[11px] leading-6 text-white/55">
+              <p className="mt-5 text-[16px] leading-6 text-white/55">
                 To develop high-quality commercial spaces that provide
                 exceptional opportunities, foster vibrant business
                 ecosystems and create lasting value for our partners,
@@ -369,7 +306,7 @@ export default function AboutPage() {
             {/* TITLE */}
             <div>
 
-              <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
                 The Greno Advantage
               </p>
 
@@ -387,7 +324,7 @@ export default function AboutPage() {
             {/* DESCRIPTION + CARDS */}
             <div>
 
-              <p className="max-w-[430px] text-[10px] leading-6 text-[#0D2118]/55">
+              <p className="max-w-[430px] text-[16px] leading-6 text-[#0D2118]/55">
                 We combine strategic location, modern design and a deep
                 understanding of business needs to create a commercial
                 destination that stands apart.
@@ -405,16 +342,16 @@ export default function AboutPage() {
                     }`}
                   >
 
-                    <span className="text-[7px] text-[#C1993D]">
+                    <span className="text-[12px] text-[#C1993D]">
                       {item.number}
                     </span>
 
-                    <h3 className="mt-8 font-serif text-[19px] leading-tight">
+                    <h3 className="mt-8 font-serif text-[24px] leading-tight">
                       {item.title}
                     </h3>
 
                     <p
-                      className={`mt-3 text-[8px] leading-5 ${
+                      className={`mt-3 text-[14px] leading-5 ${
                         item.dark
                           ? "text-white/50"
                           : "text-[#0D2118]/50"
@@ -435,7 +372,7 @@ export default function AboutPage() {
             <div className="relative min-h-[420px] overflow-hidden">
 
               <Image
-                src="/images/greno-commercial.jpg"
+                src="/images/about/about2.png"
                 alt="Greno Plaza commercial spaces"
                 fill
                 className="object-cover"
@@ -482,7 +419,7 @@ export default function AboutPage() {
 
           <div>
 
-            <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
               Let&apos;s Shape The Future Together
             </p>
 
@@ -499,7 +436,7 @@ export default function AboutPage() {
 
           <a
             href="#contact"
-            className="group inline-flex w-fit items-center gap-7 bg-[#C1993D] px-7 py-4 text-[8px] font-bold uppercase tracking-[0.18em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
+            className="group inline-flex w-fit items-center gap-7 bg-[#C1993D] px-7 py-4 text-[12px] font-bold uppercase tracking-[0.18em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
           >
             Get In Touch
             <span className="transition-transform group-hover:translate-x-1">
@@ -524,7 +461,7 @@ export default function AboutPage() {
           {/* CONTACT TITLE */}
           <div>
 
-            <p className="text-[8px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
               Get In Touch
             </p>
 
@@ -540,7 +477,7 @@ export default function AboutPage() {
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
-            <p className="mt-6 max-w-[340px] text-[10px] leading-6 text-[#0D2118]/55">
+            <p className="mt-6 max-w-[340px] text-[16px] leading-6 text-[#0D2118]/55">
               Have questions or want to know more about Greno Plaza? Our team
               is here to help you explore opportunities and find the perfect
               space for your business.
@@ -579,15 +516,15 @@ export default function AboutPage() {
                 </div>
 
                 <div>
-                  <p className="text-[7px] uppercase tracking-[0.25em] text-[#0D2118]/40">
+                  <p className="text-[12px] uppercase tracking-[0.25em] text-[#0D2119]/40">
                     {item.title}
                   </p>
 
-                  <p className="mt-1 text-[11px] font-medium">
+                  <p className="mt-1 text-[12px] font-medium">
                     {item.value}
                   </p>
 
-                  <p className="mt-1 text-[8px] text-[#0D2118]/45">
+                  <p className="mt-1 text-[12px] text-[#0D2118]/45">
                     {item.sub}
                   </p>
                 </div>
@@ -597,7 +534,7 @@ export default function AboutPage() {
 
             <a
               href="mailto:info@grenoplaza.com"
-              className="inline-flex items-center gap-6 border border-[#C1993D] px-6 py-3 text-[8px] font-semibold uppercase tracking-[0.16em] text-[#0D2118] transition hover:bg-[#C1993D]"
+              className="inline-flex items-center gap-6 border border-[#C1993D] px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0D2118] transition hover:bg-[#C1993D]"
             >
               Send Enquiry
               <span>→</span>
@@ -610,7 +547,7 @@ export default function AboutPage() {
           <div className="relative min-h-[420px] overflow-hidden bg-[#0D2118]">
 
             <Image
-              src="/images/greno-reception.jpg"
+              src="/images/about/about2.png"
               alt="Greno Plaza reception"
               fill
               className="object-cover"
@@ -647,21 +584,7 @@ export default function AboutPage() {
       {/* =========================================================
           FOOTER
       ========================================================= */}
-      <footer className="border-t border-white/10 bg-[#0D2118] px-6 py-7 text-white sm:px-10 lg:px-12">
-
-        <div className="mx-auto flex max-w-[1400px] flex-col justify-between gap-4 sm:flex-row sm:items-center">
-
-          <p className="text-[7px] uppercase tracking-[0.2em] text-white/35">
-            © 2026 Greno Plaza. All Rights Reserved.
-          </p>
-
-          <p className="text-[7px] uppercase tracking-[0.2em] text-[#C1993D]">
-            High Street Commercial
-          </p>
-
-        </div>
-
-      </footer>
+      
 
     </main>
   );
