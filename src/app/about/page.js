@@ -5,26 +5,26 @@ import Image from "next/image";
 const advantages = [
   {
     number: "01",
-    title: "Strategic Location",
-    text: "Excellent connectivity and high footfall potential.",
+    title: "Greater Noida Address",
+    text: "A commercial high-street project in Sector 36.",
     dark: true,
   },
   {
     number: "02",
-    title: "Thoughtful Design",
-    text: "Modern architecture with functional and flexible spaces.",
+    title: "Retail Shop Spaces",
+    text: "Commercial units for shops and customer-facing services.",
     dark: false,
   },
   {
     number: "03",
-    title: "High Growth Potential",
-    text: "A future-ready destination for ambitious businesses.",
+    title: "Business Categories",
+    text: "Explore retail, food, pharmacy, salon and service uses.",
     dark: true,
   },
   {
     number: "04",
-    title: "Vibrant Community",
-    text: "A dynamic mix of retail, dining, lifestyle and entertainment.",
+    title: "Site Visit Enquiries",
+    text: "Contact the team to discuss spaces and arrange a visit.",
     dark: false,
   },
 ];
@@ -63,21 +63,21 @@ export default function AboutPage() {
             </p>
 
             <h1 className="font-serif text-[40px] font-light leading-[0.94] tracking-[-0.04em] text-white sm:text-[70px] lg:text-[82px]">
-              More Than
+              High-Street
               <br />
-              Real Estate,
+              Commercial Spaces
               <br />
               <span className="italic text-[#C1993D]">
-                A Better Tomorrow
+                in Greater Noida
               </span>
             </h1>
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
             <p className="mt-6 max-w-[430px] text-[14px] leading-6 text-white/65">
-              Greno Plaza is a new-age high street commercial destination,
-              created to bring together visionary businesses, vibrant
-              experiences and long-term value in one landmark address.
+              Greno Plaza is a high-street commercial project in Greater
+              Noida, planned for retail shops, food outlets and customer
+              services in one business address.
             </p>
 
             <a
@@ -111,32 +111,29 @@ export default function AboutPage() {
             </p>
 
             <h2 className="mt-5 max-w-[450px] font-serif text-[43px] font-light leading-[0.98] tracking-[-0.04em] sm:text-[57px]">
-              Creating Spaces
+              Commercial Spaces
               <br />
-              for People,
+              for Retail,
               <br />
-              Brands and
-              <br />
-              <span className="italic">Opportunities.</span>
+              Services and Dining.
             </h2>
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
             <p className="mt-6 max-w-[440px] text-[16px] leading-6 text-[#0D2118]/60">
-              Greno Plaza is designed as a premium high-street commercial
-              development that redefines the way businesses and people
-              interact. Our focus is on creating thoughtfully planned retail
-              and lifestyle spaces that offer high visibility, seamless
-              accessibility and a thriving commercial ecosystem.
+              Greno Plaza is a commercial high-street project in Sector 36,
+              Greater Noida. The project is planned for shops, food outlets
+              and service businesses, with space enquiries handled by our
+              team.
             </p>
 
             {/* MINI FEATURES */}
             <div className="mt-10 grid grid-cols-3 max-w-[470px]">
 
               {[
-                ["⌖", "Prime", "Location"],
-                ["▥", "Modern", "Infrastructure"],
-                ["◎", "People-Centric", "Design"],
+                ["⌖", "Sector 36", "Greater Noida"],
+                ["▥", "High-Street", "Commercial"],
+                ["◎", "Retail", "& Services"],
               ].map(([icon, line1, line2]) => (
                 <div
                   key={line1}
@@ -253,9 +250,8 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-5 text-[16px] leading-6 text-[#0D2118]/60">
-                To become a landmark commercial destination that sets new
-                benchmarks in design, experience and value, empowering
-                businesses and communities to grow together.
+                To establish Greno Plaza as a clear commercial address for
+                retail, food and customer-service businesses in Greater Noida.
               </p>
 
             </div>
@@ -281,10 +277,9 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-5 text-[16px] leading-6 text-white/55">
-                To develop high-quality commercial spaces that provide
-                exceptional opportunities, foster vibrant business
-                ecosystems and create lasting value for our partners,
-                investors and visitors.
+                To bring relevant shop formats and service categories
+                together, and help businesses understand available spaces,
+                site visits and enquiry steps.
               </p>
 
             </div>
@@ -325,9 +320,9 @@ export default function AboutPage() {
             <div>
 
               <p className="max-w-[430px] text-[16px] leading-6 text-[#0D2118]/55">
-                We combine strategic location, modern design and a deep
-                understanding of business needs to create a commercial
-                destination that stands apart.
+                Greno Plaza focuses on high-street commercial property in
+                Greater Noida, with shop spaces planned for retail, food and
+                customer-service uses.
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-2">
@@ -407,7 +402,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-[#0D2118]">
 
         <Image
-          src="/images/greno-night.jpg"
+                src="/images/hero/site3.png"
           alt="Greno Plaza"
           fill
           className="object-cover opacity-25"
@@ -420,15 +415,15 @@ export default function AboutPage() {
           <div>
 
             <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
-              Let&apos;s Shape The Future Together
+              Discuss a Commercial Space
             </p>
 
             <h2 className="mt-5 max-w-[700px] font-serif text-[45px] font-light leading-[0.98] text-white sm:text-[65px]">
-              Your Next Business
+              Find a High-Street
               <br />
               Address{" "}
               <span className="italic text-[#C1993D]">
-                Starts Here.
+                at Greno Plaza.
               </span>
             </h2>
 
@@ -466,21 +461,20 @@ export default function AboutPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-[45px] font-light leading-[0.95] sm:text-[60px]">
-              Let&apos;s Build
+              Let&apos;s Discuss
               <br />
-              Something
+              Your Commercial
               <br />
               <span className="italic text-[#C1993D]">
-                Remarkable.
+                Space.
               </span>
             </h2>
 
             <div className="mt-7 h-px w-10 bg-[#C1993D]" />
 
             <p className="mt-6 max-w-[340px] text-[16px] leading-6 text-[#0D2118]/55">
-              Have questions or want to know more about Greno Plaza? Our team
-              is here to help you explore opportunities and find the perfect
-              space for your business.
+              Ask about retail, food or service-oriented commercial spaces at
+              Greno Plaza, or arrange a visit to the Sector 36 project.
             </p>
 
           </div>
@@ -493,7 +487,7 @@ export default function AboutPage() {
               {
                 icon: "◯",
                 title: "Phone",
-                value: "+91 98765 43210",
+                value: "+91 98106 25583",
                 sub: "Mon - Sat, 9:00 AM - 6:00 PM",
               },
               {
@@ -506,7 +500,7 @@ export default function AboutPage() {
                 icon: "⌖",
                 title: "Greno Plaza",
                 value: "Greater Noida, Uttar Pradesh",
-                sub: "Visit our site for a personal tour",
+                sub: "Ask our team to arrange a site visit",
               },
             ].map((item) => (
               <div key={item.title} className="flex gap-5">

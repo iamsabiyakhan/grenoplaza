@@ -16,12 +16,12 @@ export default function SiteFooter() {
               alt="Greno Plaza Logo"
               width={155}
               height={80}
-              className="h-100px w-100px object-fit"
+              className="h-auto w-[120px] object-contain"
             />
           </div>
         </Link>
           <p className="footer-copy">
-            Premium addresses, thoughtfully designed living, and exceptional service for modern buyers.
+            Retail shops, food outlets and customer services at Greno Plaza.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function SiteFooter() {
           <ul className="footer-links">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/properties">Properties</Link></li>
+            <li><Link href="/service">Services</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -40,8 +40,8 @@ export default function SiteFooter() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-links">
-            <li>9810 625 583</li>
-            <li>hello@greno-plaza.com</li>
+            <li><a href="tel:+919810625583">9810 625 583</a></li>
+            <li><a href="mailto:info@grenoplaza.com">info@grenoplaza.com</a></li>
             <li>Plot No. LS-09, Sector 36, Greater Noida (U.P.)</li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ export default function SiteFooter() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© 2026 Greno Plaza</span>
-          <span>Built for elevated living</span>
+          <span>Commercial spaces for business and brands</span>
         </div>
       </div>
     </footer>

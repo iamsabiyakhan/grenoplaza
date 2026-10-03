@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Greno Plaza | Premium Real Estate",
-  description: "Luxury real estate and modern living solutions.",
+  title: "Greno Plaza | High-Street Commercial Spaces",
+  description: "Explore retail shops, food outlets and commercial service spaces at Greno Plaza, Sector 36, Greater Noida.",
 };
 
 export default function RootLayout({ children }) {

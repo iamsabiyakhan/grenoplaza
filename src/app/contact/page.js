@@ -3,6 +3,23 @@
 import Image from "next/image";
 
 export default function ContactPage() {
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const body = [
+      `Name: ${formData.get("name")}`,
+      `Email: ${formData.get("email")}`,
+      `Phone: ${formData.get("phone")}`,
+      `Message: ${formData.get("message")}`,
+    ].join("\n");
+    const params = new URLSearchParams({
+      subject: `Greno Plaza enquiry from ${formData.get("name")}`,
+      body,
+    });
+
+    window.location.href = `mailto:info@grenoplaza.com?${params.toString()}`;
+  }
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#F4EFE9] text-[#0D2118]">
 
@@ -48,22 +65,18 @@ export default function ContactPage() {
 
             <h1 className="mt-6 font-serif text-[50px] font-light leading-[0.96] tracking-[-0.04em] text-white sm:text-[64px] lg:text-[72px]">
 
-              Let&apos;s Build
+              Enquire About
               <br />
-
-              Something
-              <br />
-
               <span className="italic text-[#C1993D]">
-                Remarkable.
+                Commercial Space
               </span>
 
             </h1>
 
 
             <p className="mt-7 max-w-[410px] text-[16px] leading-6 text-white/60">
-              We&apos;re here to listen, understand and help you find the
-              right opportunity at Greno Plaza.
+              Contact Greno Plaza about retail shops, food outlets and
+              commercial service spaces in Greater Noida.
             </p>
 
           </div>
@@ -100,20 +113,19 @@ export default function ContactPage() {
 
             <h2 className="mt-5 font-serif text-[46px] font-light leading-[0.95] tracking-[-0.04em] sm:text-[58px]">
 
-              We&apos;re Here
+              Commercial Space
               <br />
-
               <span className="italic text-[#C1993D]">
-                to Help.
+                Enquiries.
               </span>
 
             </h2>
 
 
             <p className="mt-7 max-w-[390px] text-[16px] leading-6 text-[#0D2118]/55">
-              Whether you&apos;re a business owner, investor, or simply want
-              to know more about Greno Plaza, we&apos;d love to hear from you.
-              Reach out to us through the form or via our contact details.
+              Tell us what kind of high-street space your business needs.
+              Use the form, call our team or email us to discuss a visit to
+              Greno Plaza.
             </p>
 
 
@@ -128,9 +140,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <p className="text-[14px] font-semibold">
+                  <a href="tel:+919810625583" className="text-[14px] font-semibold hover:underline">
                     Contact No: 9810 625 583
-                  </p>
+                  </a>
 
                   <p className="mt-1 text-[14px] text-[#0D2118]/45">
                     Mon - Sat, 9:00 AM - 6:00 PM
@@ -148,9 +160,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <p className="text-[14px] font-semibold">
+                  <a href="mailto:info@grenoplaza.com" className="text-[14px] font-semibold hover:underline">
                     info@grenoplaza.com
-                  </p>
+                  </a>
 
                   <p className="mt-1 text-[14px] text-[#0D2118]/45">
                     We reply within 24 hours
@@ -192,18 +204,43 @@ export default function ContactPage() {
               </p>
 
               <div className="mt-3 flex gap-3">
-
-  {["f", "◎", "in", "▶"].map((icon) => (
-    <a
-      key={icon}
-      href="#"
-      className="group flex h-9 w-9 items-center justify-center rounded-full bg-[#C1993D] text-[24px] font-semibold transition hover:bg-[#0D2118]"
-    >
-      <span className="text-[#0D2118] transition-colors group-hover:text-[#C1993D]">{icon}</span>
-    </a>
-  ))}
-
-</div>
+                <a
+                  href="https://www.instagram.com/grenoplaza/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Greno Plaza on Instagram"
+                  className="group flex h-9 w-9 items-center justify-center rounded-full bg-[#C1993D] text-[#0D2118] transition hover:bg-[#0D2118] hover:text-[#C1993D]"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="h-[18px] w-[18px]"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/grenoplaza/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Greno Plaza on Facebook"
+                  className="group flex h-9 w-9 items-center justify-center rounded-full bg-[#C1993D] text-[#0D2118] transition hover:bg-[#0D2118] hover:text-[#C1993D]"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-[18px] w-[18px]"
+                  >
+                    <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.5v1.9H7v3.1h2.9v8h3.6z" />
+                  </svg>
+                </a>
+              </div>
 
             </div>
 
@@ -229,65 +266,66 @@ export default function ContactPage() {
               </p>
 
 
-              <form className="mt-8 space-y-3">
+              <form onSubmit={handleSubmit} className="mt-8 space-y-3">
 
                 {/* NAME + EMAIL */}
                 <div className="grid gap-3 sm:grid-cols-2">
 
+                  <label className="sr-only" htmlFor="contact-name">Full name</label>
                   <input
+                    id="contact-name"
+                    name="name"
                     type="text"
+                    autoComplete="name"
                     placeholder="Full Name*"
-                    className="h-11 border border-white/20 bg-transparent px-4 text-[9px] text-white outline-none placeholder:text-white/45 focus:border-[#C1993D]"
+                    required
+                    className="h-11 min-w-0 border border-white/20 bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/60 focus:border-[#C1993D]"
                   />
 
+                  <label className="sr-only" htmlFor="contact-email">Email address</label>
                   <input
+                    id="contact-email"
+                    name="email"
                     type="email"
+                    autoComplete="email"
                     placeholder="Email Address*"
-                    className="h-11 border border-white/20 bg-transparent px-4 text-[9px] text-white outline-none placeholder:text-white/45 focus:border-[#C1993D]"
+                    required
+                    className="h-11 min-w-0 border border-white/20 bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/60 focus:border-[#C1993D]"
                   />
 
                 </div>
 
 
                 {/* PHONE */}
+                <label className="sr-only" htmlFor="contact-phone">Phone number</label>
                 <input
+                  id="contact-phone"
+                  name="phone"
                   type="tel"
+                  autoComplete="tel"
                   placeholder="Phone Number*"
-                  className="h-11 w-full border border-white/20 bg-transparent px-4 text-[9px] text-white outline-none placeholder:text-white/45 focus:border-[#C1993D]"
+                  required
+                  className="h-11 w-full border border-white/20 bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/60 focus:border-[#C1993D]"
                 />
 
-
-                {/* BUSINESS TYPE */}
-                <select
-                  defaultValue=""
-                  className="h-11 w-full appearance-none border border-white/20 bg-[#0D2118] px-4 text-[9px] text-white/45 outline-none focus:border-[#C1993D]"
-                >
-                  <option value="" disabled>
-                    Business Type
-                  </option>
-
-                  <option value="retail">Retail</option>
-                  <option value="food">Food & Beverage</option>
-                  <option value="office">Office</option>
-                  <option value="investment">Investment</option>
-                  <option value="other">Other</option>
-                </select>
-
-
                 {/* MESSAGE */}
+                <label className="sr-only" htmlFor="contact-message">Your message</label>
                 <textarea
+                  id="contact-message"
+                  name="message"
                   placeholder="Your Message*"
                   rows={6}
-                  className="w-full resize-none border border-white/20 bg-transparent px-4 py-4 text-[9px] text-white outline-none placeholder:text-white/45 focus:border-[#C1993D]"
+                  required
+                  className="w-full resize-y border border-white/20 bg-transparent px-4 py-4 text-[14px] text-white outline-none placeholder:text-white/60 focus:border-[#C1993D]"
                 />
 
 
                 {/* BUTTON */}
                 <button
                   type="submit"
-                  className="group flex h-12 w-full items-center justify-center gap-5 bg-[#C1993D] text-[8px] font-bold uppercase tracking-[0.18em] transition-colors hover:bg-[#0D2118]"
+                  className="group flex h-12 w-full items-center justify-center gap-5 bg-[#C1993D] text-[10px] font-bold uppercase tracking-[0.18em] transition-colors hover:bg-[#0D2118]"
                 >
-                  <span className="text-[#0D2118] transition-colors group-hover:text-white">Send Enquiry</span>
+                  <span className="text-[#0D2118] transition-colors group-hover:text-white">Continue via email</span>
                   <span className="text-[13px] text-[#0D2118] transition-colors group-hover:text-[#C1993D]">→</span>
                 </button>
 
@@ -303,7 +341,7 @@ export default function ContactPage() {
       {/* =====================================================
           LOCATION
       ===================================================== */}
-      <section className="grid lg:grid-cols-2">
+      <section id="location" className="grid lg:grid-cols-2">
 
         {/* MAP */}
         <div className="relative min-h-[420px] overflow-hidden bg-[#DED8CE]">
@@ -354,14 +392,10 @@ export default function ContactPage() {
 
             <h2 className="mt-5 font-serif text-[43px] font-light leading-[0.98] sm:text-[55px]">
 
-              Visit Us at
+              Visit Greno Plaza
               <br />
-
-              the Heart of
-              <br />
-
               <span className="italic text-[#C1993D]">
-                Greater Noida.
+                Sector 36.
               </span>
 
             </h2>
@@ -371,9 +405,9 @@ export default function ContactPage() {
 
 
             <p className="mt-6 max-w-[430px] text-[18px] leading-6 text-[#0D2118]/55">
-              Strategically located in a prime commercial hub, Greno Plaza
-              offers excellent connectivity, high visibility and easy access
-              for your customers and business.
+              Greno Plaza is a high-street commercial project at Plot No.
+              LS-09, Sector 36, Greater Noida. Contact us to discuss your
+              intended business use and arrange a site visit.
             </p>
 
 
@@ -402,7 +436,7 @@ export default function ContactPage() {
 
         {/* Background image */}
         <Image
-          src="/images/contact/contactAbout.png"
+          src="/images/contact/contactabout.png"
           alt="Greno Plaza"
           fill
           className="object-cover opacity-45"
@@ -422,7 +456,7 @@ export default function ContactPage() {
             <div className="flex items-center gap-4">
 
               <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#C1993D]">
-                Let&apos;s Create Opportunities Together
+                Greno Plaza | High-Street Commercial
               </p>
 
               <span className="h-px w-10 bg-[#C1993D]" />
@@ -432,21 +466,18 @@ export default function ContactPage() {
 
             <h2 className="mt-5 max-w-[700px] font-serif text-[46px] font-light leading-[0.98] text-white sm:text-[62px]">
 
-              Your Next Business
+              Discuss a Commercial
               <br />
-
-              Address{" "}
-
               <span className="italic text-[#C1993D]">
-                Starts Here.
+                Space with Us.
               </span>
 
             </h2>
 
 
             <p className="mt-6 max-w-[470px] text-[14px] leading-6 text-white/55">
-              Be a part of Greno Plaza — a high-street destination designed
-              for growth, visibility and long-term success.
+              Ask about retail, food and service-oriented spaces at Greno
+              Plaza in Greater Noida.
             </p>
 
 

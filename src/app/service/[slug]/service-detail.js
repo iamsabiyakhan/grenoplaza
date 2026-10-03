@@ -38,7 +38,7 @@ export default function ServiceDetail({ service }) {
           </div>
           <div className="relative min-h-[440px]">
             <div className="absolute left-0 top-0 h-[340px] w-[72%] overflow-hidden"><Image src={service.image} alt={`${service.title} at Greno Plaza`} fill className="object-cover" /></div>
-            <div className="absolute bottom-0 right-0 h-[220px] w-[52%] overflow-hidden border-[8px] border-[#F5F0E6]"><Image src="/images/service/serviceHero.png" alt="Greno Plaza commercial destination" fill className="object-cover" /></div>
+            <div className="absolute bottom-0 right-0 h-[220px] w-[52%] overflow-hidden border-[8px] border-[#F5F0E6]"><Image src="/images/service/06-serviceHero.png" alt="Greno Plaza commercial destination" fill className="object-cover" /></div>
             <div className="absolute bottom-0 left-[5%] hidden w-[38%] bg-[#ECE5D5] px-6 py-6 lg:block"><div className="mb-3 h-[2px] w-7 bg-[#C59F40]" /><p className="font-serif text-[21px] leading-tight">Commercial spaces for the next stage of your business.</p></div>
           </div>
         </div>
@@ -88,9 +88,6 @@ export default function ServiceDetail({ service }) {
         </div>
       </section>
 
-      <footer className="border-t border-[#C59F40]/40 bg-[#0D1F17] px-6 py-6 text-white lg:px-10">
-        <div className="mx-auto flex max-w-[1300px] flex-col items-center justify-between gap-5 sm:flex-row"><p className="text-[10px] text-white/50">© 2026 Greno Plaza. All rights reserved.</p><nav className="flex flex-wrap justify-center gap-5 text-[10px] text-white/60" aria-label="Footer"><Link href="/" className="hover:text-[#C59F40]">Home</Link><Link href="/about" className="hover:text-[#C59F40]">About</Link><Link href="/properties" className="hover:text-[#C59F40]">Properties</Link><Link href="/service" className="hover:text-[#C59F40]">Services</Link><Link href="/contact" className="hover:text-[#C59F40]">Contact</Link></nav></div>
-      </footer>
     </main>
   );
 }

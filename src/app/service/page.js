@@ -7,29 +7,25 @@ const properties = [
     slug: "retail-spaces",
     title: "Retail Spaces",
     location: "Greno Plaza, Greater Noida",
-    size: "500 - 2,000 Sq. Ft.",
-    image: "/images/property-retail.jpg",
+    image: "/images/hero/site1.png",
   },
   {
     slug: "commercial-shops",
     title: "Commercial Shops",
     location: "Greno Plaza, Greater Noida",
-    size: "300 - 1,500 Sq. Ft.",
-    image: "/images/property-commercial.jpg",
+    image: "/images/hero/site2.png",
   },
   {
     slug: "food-beverage",
     title: "Food & Beverage Outlets",
     location: "Greno Plaza, Greater Noida",
-    size: "400 - 2,500 Sq. Ft.",
-    image: "/images/property-food.jpg",
+    image: "/images/service/05-lifestyle-amenities.jpg",
   },
   {
     slug: "office-workspaces",
-    title: "Office & Workspaces",
+    title: "Commercial Service Units",
     location: "Greno Plaza, Greater Noida",
-    size: "1,000 - 5,000 Sq. Ft.",
-    image: "/images/property-office.jpg",
+    image: "/images/service/officeSpace.png",
   },
 ];
 
@@ -40,27 +36,27 @@ const managementServices = [
   [
     "⌂",
     "Tenant Onboarding",
-    "Smooth and transparent process from site to setup.",
+    "Understand the enquiry and site-visit steps for a commercial unit.",
   ],
   [
     "◇",
     "Rental Guidance",
-    "Get the best value with market insights and expert advice.",
+    "Discuss space requirements, lease questions and intended business use.",
   ],
   [
     "╱",
     "Infrastructure & Support",
-    "Full on-site infrastructure for a seamless experience.",
+    "Ask our team for project details relevant to your business needs.",
   ],
   [
     "◉",
     "Property Customization",
-    "Flexible spaces tailored to your brand's needs.",
+    "Discuss unit formats and fit-out requirements for your business.",
   ],
   [
     "⌖",
     "Request a Property Tour",
-    "Visit and explore the space in detail.",
+    "Arrange a visit to explore the high-street commercial project.",
   ],
 ];
 
@@ -76,7 +72,7 @@ export default function ServicePage() {
       <section className="relative min-h-[560px] overflow-hidden bg-[#0D2118]">
 
         <Image
-          src="/images/service/serviceHero.png"
+          src="/images/service/06-serviceHero.png"
           alt="Greno Plaza Services"
           fill
           priority
@@ -101,31 +97,24 @@ export default function ServicePage() {
 
 
             <h1 className="mt-6 font-serif text-[52px] font-light leading-[0.94] tracking-[-0.04em] text-white sm:text-[68px]">
-              Spaces for
+              High-Street
               <br />
-              Businesses
+              Commercial Spaces
               <br />
               <span className="italic text-[#C1993D]">
-                that Grow.
+                at Greno Plaza.
               </span>
             </h1>
 
 
             <p className="mt-7 max-w-[420px] text-[14px] leading-6 text-white/65">
-              At Greno Plaza, we offer premium commercial spaces and
-              end-to-end support to help businesses thrive in a vibrant
-              high-street destination.
+              Explore retail shops, food outlets and customer-service units
+              at Greno Plaza in Sector 36, Greater Noida. Contact us about
+              space options and site visits.
             </p>
 
 
-            <a
-              href="#services"
-              className="mt-8 inline-flex items-center gap-6 bg-[#C1993D] px-7 py-4 text-[12px] font-bold uppercase tracking-[0.15em] text-[#0D2118] transition hover:bg-[#F4EFE9]"
-            >
-              Explore Our Services
-
-              <span>→</span>
-            </a>
+            
 
           </div>
 
@@ -152,7 +141,7 @@ export default function ServicePage() {
             <div className="bg-[#FBF8F3] p-7 sm:p-10 lg:p-12">
 
               <h2 className="font-serif text-[31px] font-medium">
-                Our Services
+                Commercial Property Services
               </h2>
 
               <div className="mt-4 h-px bg-[#0D2118]/10" />
@@ -222,28 +211,27 @@ export default function ServicePage() {
 
 
                 <h2 className="mt-6 max-w-[330px] font-serif text-[34px] font-light leading-[1]">
-                  Your Property,
+                  Your Commercial Space,
                   <br />
                   <span className="italic text-[#C1993D]">
-                    Our Priority.
+                    Our Focus.
                   </span>
                 </h2>
 
 
                 <p className="mt-6 max-w-[390px] text-[14px] leading-5 text-white/55">
-                  We provide tailored property management solutions
-                  designed to maximize your value, ensure seamless
-                  operations and help your business grow at Greno Plaza.
+                  Our team can help you understand commercial unit options,
+                  discuss intended use and arrange a visit to Greno Plaza.
                 </p>
 
 
                 <div className="mt-7 space-y-3">
 
                   {[
-                    "Expertise in Commercial Real Estate",
-                    "Transparent & Hassle-Free Process",
-                    "Tailored Solutions for Your Brand",
-                    "Long-Term Partnership Approach",
+                    "High-street commercial project",
+                    "Retail, food and service categories",
+                    "Space enquiry coordination",
+                    "Site visit arrangements",
                   ].map((item) => (
 
                     <div
@@ -312,18 +300,17 @@ export default function ServicePage() {
 
 
               <h2 className="mt-5 max-w-[650px] font-serif text-[42px] font-light leading-[0.96] tracking-[-0.04em] sm:text-[55px]">
-                We Make Property
+                Explore Commercial
                 <br />
-                Management Simple.
+                Spaces at Greno Plaza.
               </h2>
 
             </div>
 
 
             <p className="max-w-[300px] text-[14px] leading-5 text-[#0D2118]/50">
-              From brand placement to space optimization, our full-service
-              property management solutions are designed to help your
-              business thrive in one integrated destination.
+              Tell us your business type and space requirements. Our team
+              can discuss relevant unit options and arrange a site visit.
             </p>
 
           </div>

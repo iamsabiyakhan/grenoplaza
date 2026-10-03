@@ -1,5 +1,10 @@
+"use client";
+
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import BookVisit from "@/components/book-visit";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -9,6 +14,8 @@ const navItems = [
 ];
 
 export default function SiteHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header
       className="site-header"
@@ -29,13 +36,14 @@ export default function SiteHeader() {
               alt="Greno Plaza Logo"
               width={155}
               height={80}
-              className="h-100px w-100px object-fit"
+              className="h-auto w-[112px] object-contain sm:w-[155px]"
             />
           </div>
         </Link>
 
         <nav
-          className="main-nav"
+          id="main-navigation"
+          className={`main-nav${isMenuOpen ? " mobile-nav-open" : ""}`}
           aria-label="Main navigation"
         >
           {navItems.map((item) => (
@@ -43,6 +51,7 @@ export default function SiteHeader() {
               key={item.href}
               href={item.href}
               className="nav-link"
+              onClick={() => setIsMenuOpen(false)}
               style={{
                 color: "#C09D41",
               }}
@@ -52,16 +61,18 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <Link
-          href="/contact"
-          className="header-cta"
-          style={{
-            backgroundColor: "#C09D41",
-            color: "#F3EBDD",
-          }}
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-controls="main-navigation"
+          aria-expanded={isMenuOpen}
+          onClick={() => setIsMenuOpen((open) => !open)}
         >
-          Book a Visit
-        </Link>
+          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+
+        <BookVisit />
 
       </div>
     </header>
