@@ -178,6 +178,7 @@ export const services = [
     description: "Explore retail, food and customer-service uses at Greno Plaza.",
     image: "/images/service/01-space-management-233x186-39.png",
     heroImage: "/images/service/solution.png",
+    
     eyebrow: "Commercial Space Solutions",
     heroTitle: "Retail, Food and Services on the High Street.",
     heroDescription: "Greno Plaza is a high-street commercial project in Greater Noida. Explore business categories and ask our team about space options.",

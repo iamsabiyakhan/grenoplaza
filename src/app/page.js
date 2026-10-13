@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import ReadMore from "@/components/read-more";
 
 const properties = [
   {
@@ -10,21 +8,21 @@ const properties = [
     title: "Retail Shops",
     location: "Greno Plaza, Sector 36, Greater Noida",
     type: "Retail",
-    image: "/images/hero/site1.png",
+    image: "/images/perfect-place/shopping-promenade.png",
   },
   {
     slug: "food-beverage",
     title: "Food & Beverage Units",
     location: "Greno Plaza, Sector 36, Greater Noida",
     type: "Food & Beverage",
-    image: "/images/service/05-lifestyle-amenities.jpg",
+    image: "/images/perfect-place/food-hall.png",
   },
   {
     slug: "commercial-shops",
     title: "Commercial Shop Units",
     location: "Greno Plaza, Sector 36, Greater Noida",
     type: "Commercial",
-    image: "/images/hero/site2.png",
+    image: "/images/perfect-place/menswear-boutique.png",
   },
 ];
 
@@ -52,8 +50,6 @@ const features = [
 ];
 
 export default function Home() {
-  const [showMore, setShowMore] = useState(false);
-
   return (
     <main className="min-h-screen overflow-hidden bg-[#F5F0E6] text-[#0D1F17]">
 
@@ -95,12 +91,16 @@ export default function Home() {
 
           {/* RIGHT IMAGE */}
 
-          <div className="relative overflow-hidden rounded-[7px]">
+          <div className="relative h-[270px] overflow-hidden rounded-[7px] sm:h-[330px] md:h-[350px] lg:h-[485px]">
 
-            <img
-              src="/images/hero/homeHeroBanner.png"
+            <Image
+              src="/images/hero/heroBannerFinal.png"
               alt="Greno Plaza commercial building"
-              className="block h-[270px] w-full object-cover sm:h-[330px] md:h-[350px] lg:h-[485px]"
+              fill
+              preload
+              quality={75}
+              sizes="(max-width: 767px) 100vw, (max-width: 1400px) 58vw, 800px"
+              className="object-cover"
             />
 
             <div
@@ -262,40 +262,7 @@ export default function Home() {
 
             {/* ABOUT TEXT + READ MORE */}
 
-            <p className="mt-5 max-w-[390px] text-[18px] leading-[1.75] text-[#777A73]">
-
-              Greno has worked in Greater Noida real estate since 2015.
-              Greno Plaza brings that experience to a high-street commercial
-              project planned for shops, services and food businesses.
-
-              {!showMore && (
-                <button
-                  type="button"
-                  onClick={() => setShowMore(true)}
-                  className="ml-2 font-medium text-[#B29351] underline underline-offset-4 transition hover:text-[#18372B]"
-                >
-                  Read More
-                </button>
-              )}
-
-              {showMore && (
-                <>
-                  {" "}
-                  Greno Plaza brings retail, food and everyday services
-                  together in one commercial destination. Contact us to
-                  discuss unit options and arrange a site visit.
-
-                  <button
-                    type="button"
-                    onClick={() => setShowMore(false)}
-                    className="ml-2 font-medium text-[#B29351] underline underline-offset-4 transition hover:text-[#18372B]"
-                  >
-                    Read Less
-                  </button>
-                </>
-              )}
-
-            </p>
+            <ReadMore />
 
             
 
@@ -307,10 +274,13 @@ export default function Home() {
 
             <div className="relative h-[260px] overflow-hidden sm:h-[300px] lg:h-[320px]">
 
-              <img
-                src="/images/hero/homeAbout.png"
+              <Image
+                src="/images/hero/homeaboutfinal.png"
                 alt="Greno Plaza interior"
-                className="h-full w-full object-cover"
+                fill
+                quality={70}
+                sizes="(max-width: 767px) 100vw, 48vw"
+                className="object-cover"
               />
 
             </div>
@@ -419,19 +389,25 @@ export default function Home() {
 
           <div className="grid grid-cols-2 gap-3">
 
-            <div className="overflow-hidden rounded-sm">
-              <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+            <div className="relative h-[250px] overflow-hidden rounded-sm sm:h-[310px]">
+              <Image
+                src="/images/hero/homeaboutfinal.png"
                 alt="Commercial interior"
-                className="h-[250px] w-full object-cover sm:h-[310px]"
+                fill
+                quality={70}
+                sizes="(max-width: 767px) 50vw, 24vw"
+                className="object-cover"
               />
             </div>
 
-            <div className="mt-8 overflow-hidden rounded-sm">
-              <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+            <div className="relative mt-8 h-[250px] overflow-hidden rounded-sm sm:h-[310px]">
+              <Image
+                src="/images/hero/aboutHighStreet2.png"
                 alt="Premium commercial property"
-                className="h-[250px] w-full object-cover sm:h-[310px]"
+                fill
+                quality={70}
+                sizes="(max-width: 767px) 50vw, 24vw"
+                className="object-cover"
               />
             </div>
 
@@ -520,10 +496,13 @@ export default function Home() {
 
                 <div className="relative aspect-[1.72/1] overflow-hidden">
 
-                  <img
+                  <Image
                     src={space.image}
                     alt={space.title}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                    fill
+                    quality={70}
+                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                    className="object-cover transition duration-700 group-hover:scale-[1.03]"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
@@ -628,12 +607,15 @@ export default function Home() {
                 className="group overflow-hidden border border-[#DDD5C5] bg-white"
               >
 
-                <div className="relative overflow-hidden">
+                <div className="relative h-[270px] overflow-hidden">
 
-                  <img
+                  <Image
                     src={property.image}
                     alt={property.title}
-                    className="h-[270px] w-full object-cover transition duration-700 group-hover:scale-105"
+                    fill
+                    quality={70}
+                    sizes="(max-width: 767px) 100vw, 33vw"
+                    className="object-cover transition duration-700 group-hover:scale-105"
                   />
 
                   <span className="absolute left-4 top-4 rounded-full bg-[#F5F0E6] px-3 py-1.5 text-[7px] font-bold uppercase tracking-[0.12em] text-[#0D1F17]">
@@ -716,10 +698,13 @@ export default function Home() {
 
           <div className="relative hidden overflow-hidden md:block">
 
-            <img
+            <Image
               src="/images/hero/ctaimage.png"
               alt="Greno Plaza greenery"
-              className="h-full min-h-[180px] w-full object-cover"
+              fill
+              quality={65}
+              sizes="260px"
+              className="object-cover"
             />
 
             <div className="absolute inset-0 bg-[#07140F]/15" />

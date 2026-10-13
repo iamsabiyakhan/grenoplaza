@@ -41,7 +41,7 @@ export default function AboutPage() {
       <section className="relative min-h-[680px] overflow-hidden bg-[#0D2118] lg:min-h-[760px]">
 
         <Image
-          src="/images/about/aboutHero.png"
+          src="/images/about/aboutHero1.png"
           alt="Greno Plaza"
           fill
           priority
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
             <div className="relative min-h-[480px] overflow-hidden sm:min-h-[560px]">
               <Image
-                src="/images/about/aboutSection.png"
+                src="/images/about/aboutSection1.png"
                 alt="Greno Plaza courtyard"
                 fill
                 className="object-cover"
@@ -367,7 +367,7 @@ export default function AboutPage() {
             <div className="relative min-h-[420px] overflow-hidden">
 
               <Image
-                src="/images/about/about2.png"
+                src="/images/about/about1.png"
                 alt="Greno Plaza commercial spaces"
                 fill
                 className="object-cover"
@@ -541,7 +541,7 @@ export default function AboutPage() {
           <div className="relative min-h-[420px] overflow-hidden bg-[#0D2118]">
 
             <Image
-              src="/images/about/about2.png"
+              src="/images/about/about1.png"
               alt="Greno Plaza reception"
               fill
               className="object-cover"

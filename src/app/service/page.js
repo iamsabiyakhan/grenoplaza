@@ -72,7 +72,7 @@ export default function ServicePage() {
       <section className="relative min-h-[560px] overflow-hidden bg-[#0D2118]">
 
         <Image
-          src="/images/service/06-serviceHero.png"
+          src="/images/service/serviceHero.png"
           alt="Greno Plaza Services"
           fill
           priority
